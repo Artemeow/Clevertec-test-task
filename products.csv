@@ -1,0 +1,4 @@
+id;name;price;isPromotional
+1;Green Tea;16;true
+2;Meat;900.0;false
+3;Ice Cream;6.0;true
