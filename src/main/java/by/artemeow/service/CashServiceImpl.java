@@ -32,7 +32,7 @@ public class CashServiceImpl implements CashService {
                 .build();
     }
 
-    private void calculateTotal(ReceiptItem item) {
+    public void calculateTotal(ReceiptItem item) {
         var configInstance = Configuration.getInstance();
         double total = item.getQuantity() * item.getPrice();
         boolean isPromotional = item.getQuantity() > configInstance.getQUANTITY_FOR_PROMOTION();
