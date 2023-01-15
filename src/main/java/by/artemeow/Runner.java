@@ -6,7 +6,7 @@ import by.artemeow.domain.Receipt;
 import by.artemeow.domain.ReceiptItem;
 import by.artemeow.exception.InvalidCommandLineParameterException;
 import by.artemeow.service.*;
-import by.artemeow.utils.ReceiptConsoleWriter;
+import by.artemeow.utils.ReceiptFileWriter;
 import by.artemeow.utils.ReceiptWriter;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ public class Runner {
     static ProductService productService = new ProductServiceImpl();
     static DiscountCardService cardService = new DiscountCardServiceImpl();
     static CashService cashService = new CashServiceImpl();
-    static ReceiptWriter receiptWriter = new ReceiptConsoleWriter();
+    static ReceiptWriter receiptWriter = new ReceiptFileWriter();
 
     public static void main(String[] args) {
 
